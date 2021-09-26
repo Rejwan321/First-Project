@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: rgb(140, 0, 255);
+}
+nav{
+    background-color: rgb(140, 0, 255);
+    width: 100vw;
+    height: 8vh;
+}
+.progress{
+    background-color: rgb(247, 132, 1);
+    top: 0px;
+    position:fixed;
+    height: 3px;
+    animation: load 1s ease-in-out 1;
+}
+nav{
+    /* text-decoration: none; */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+}
+nav ul li a{
+    padding: 0 1vw;
+    list-style: none;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    color: rgb(255, 185, 127);
+    text-decoration: underline;
+}
+.NavBar{
+    position: relative;
+}
+.search{
+    position: absolute;
+    right: 2vw;
+    
+}
+.input{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 1vh 0.5vw;
+    margin: 0.6vw;
+}
+.search button{
+    outline: none;
+    padding: 1vh 1vw;
+    border-radius: 10px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.search button:hover{
+    background-color:rgb(212, 226, 12);
+}
+.logo{
+    background-color: rgb(140, 0, 255);
+    background-image: url('name2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    height: 5vh;
+    width: 5vw;
+    display: flex;
+    align-items: center;
+}
+@keyframes load{
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 90vw;
+    }
+    100%{
+        width: 100vw;
+    }
+}
+.animation{
+    display: flex;
+    background-image: url('logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    height: 35vh;
+    width: 35vh;
+    /* margin-left: 50px; */
+    animation: roll 2s ease-in-out infinite;
+    transform-origin: 695;
+}
+@keyframes roll{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.background{
+    height: 100vh;
+    background-color: black;
+    width: 100vw;
+    background-image: url('background.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    width: 100vw;
+}
