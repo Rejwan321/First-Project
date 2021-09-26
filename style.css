@@ -109,7 +109,7 @@ nav ul li a:hover{
     }
 }
 .background{
-    height: 100vh;
+    height: calc(100vh - 8vh - 8vh);
     background-color: black;
     width: 100vw;
     background-image: url('background.jpg');
