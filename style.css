@@ -66,10 +66,9 @@ nav ul li a:hover{
     background-color: rgb(140, 0, 255);
     background-image: url('name2.png');
     background-size: contain;
-    background-repeat: no-repeat;
-    
-    height: 5vh;
-    width: 5vw;
+    background-repeat: no-repeat; 
+    height: 8vh;
+    width: 6vw;
     display: flex;
     align-items: center;
 }
