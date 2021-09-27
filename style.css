@@ -3,10 +3,10 @@
     padding: 0;
 }
 header{
-    background-color: rgb(140, 0, 255);
+    background-color: rgb(140, 0, 255);;
 }
 nav{
-    background-color: rgb(140, 0, 255);
+    background-color: rgb(140, 0, 255);;
     width: 100vw;
     height: 8vh;
 }
@@ -17,6 +17,17 @@ nav{
     height: 3px;
     animation: load 1s ease-in-out 1;
 }
+@keyframes load{
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 90vw;
+    }
+    100%{
+        width: 100vw;
+    }
+}
 nav{
     /* text-decoration: none; */
     display: flex;
@@ -24,16 +35,16 @@ nav{
     flex-direction: row;
     
 }
-nav ul li a{
+nav ul a{
     padding: 0 1vw;
     list-style: none;
 }
-nav ul li a{
+nav ul a{
     color: white;
     text-decoration: none;
     font-size: 20px;
 }
-nav ul li a:hover{
+nav ul a:hover{
     color: rgb(255, 185, 127);
     text-decoration: underline;
 }
@@ -63,25 +74,14 @@ nav ul li a:hover{
     background-color:rgb(212, 226, 12);
 }
 .logo{
-    background-color: rgb(140, 0, 255);
-    background-image: url('name2.png');
+    background-color:rgb(140, 0, 255);;
+    background-image: url('name.png');
     background-size: contain;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     height: 8vh;
     width: 6vw;
     display: flex;
     align-items: center;
-}
-@keyframes load{
-    0%{
-        width: 0;
-    }
-    50%{
-        width: 90vw;
-    }
-    100%{
-        width: 100vw;
-    }
 }
 .animation{
     display: flex;
